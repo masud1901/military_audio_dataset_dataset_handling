@@ -53,10 +53,10 @@ def plot_samples(input_dir, num_samples=2):
             axes[class_num, j].axis("off")
 
     plt.tight_layout()
-    plt.savefig("mel_spectrogram_samples.png", dpi=300, bbox_inches="tight")
+    plt.savefig("figures/mel_spectrogram_samples.png", dpi=300, bbox_inches="tight")
     plt.show()
 
 
 # Usage
-input_dir = "data/MAD_dataset/filtered_mel_spectrograms/"
+input_dir = "data/MAD_dataset/filtered_mel_spectrograms"
 plot_samples(input_dir)
